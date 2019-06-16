@@ -1,0 +1,42 @@
+{
+	"name": "bye-console-logs",
+	"displayName": "Bye Console Logs",
+	"description": "A visual studio code extension to clear your unwanted console logs",
+	"version": "0.0.2",
+	"publisher": "WillHolmes",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.byeConsoleLogsConfirm"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.byeConsoleLogsConfirm",
+				"title": "Bye Console Logs"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^10.12.21",
+		"eslint": "^5.13.0",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28"
+	},
+	"dependencies": {
+		"fs": "^0.0.1-security",
+		"mkdirp": "^0.5.1",
+		"path": "^0.12.7",
+		"rimraf": "^2.6.3"
+	}
+}
