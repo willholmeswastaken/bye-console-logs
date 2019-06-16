@@ -46,14 +46,14 @@ suite("Extension Tests", function() {
 
 	// Defines a Mocha unit test
 	test("Gets the right amount of console logs", async () => {
-		const { doc, editor, consoleClearer } = await configure();
+		const { editor, consoleClearer } = await configure();
 		const linesToClear = consoleClearer.getLinesToClear(editor);
 		assert.equal(1, linesToClear.length, 'Found the right amount of lines');
 	});
 
 	test("Removes the right amount of console logs", async () => {
 		// Arrange
-		const { doc, editor, consoleClearer } = await configure();
+		const { editor, consoleClearer } = await configure();
 		let linesToClear = consoleClearer.getLinesToClear(editor);
 
 		assert.equal(vscode
