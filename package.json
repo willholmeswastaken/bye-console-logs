@@ -4,6 +4,7 @@
 	"description": "A visual studio code extension to clear your unwanted console logs",
 	"version": "0.0.2",
 	"publisher": "WillHolmes",
+	"repository": { "url": "https://github.com/willholmeswastaken/bye-console-logs" },
 	"engines": {
 		"vscode": "^1.35.0"
 	},
