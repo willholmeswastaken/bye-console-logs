@@ -37,7 +37,7 @@ class ConsoleClear {
             .document
             .getText();
 
-        const regex = /(console.log\(\)|console.log\(.+\));/;
+        const regex = /(console.log\(\)|console.log\(.+\))/;
 
         let endOfFile = false;
         let iteratedLine = 0;
